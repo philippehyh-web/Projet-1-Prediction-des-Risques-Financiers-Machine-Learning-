@@ -1,25 +1,40 @@
-# 🏦 Analyse des Risques Bancaires (Données Banque de France)
+# 🏦 Analyse des risques bancaires (Banque de France)
 
-## 🎯 Objectif du Projet
-Ce projet d'analyse exploratoire (EDA) vise à manipuler, nettoyer et visualiser des données financières réelles issues de la **Banque de France** (Séries temporelles relatives aux risques bancaires). 
-
-Il démontre ma capacité à traiter des jeux de données institutionnels bruts pour en extraire des visualisations claires et des statistiques descriptives.
-
-## 🛠️ Stack Technique
-- **Langage :** Python
-- **Manipulation de données :** `Pandas`, `NumPy`
-- **DataViz :** `Matplotlib`
-- **Source des données :** [Webstat - Banque de France](https://webstat.banque-france.fr/fr/themes/banque-et-assurance/banque/donnees-relatives-aux-risques-bancaires/)
-
-## 📈 Méthodologie
-1. **Extraction & Nettoyage :** Importation du dataset (format CSV/Excel), gestion des problèmes d'encodage, suppression des colonnes vides et traitement des valeurs manquantes par imputation de la médiane.
-2. **Exploration (EDA) :** Génération de statistiques descriptives pour comprendre la distribution des données financières.
-3. **Datavisualisation :** Création de graphiques de tendances (séries temporelles) et d'histogrammes de distribution pour rendre la donnée actionnable.
-
-## 🚀 Comment lancer le script
-1. Clonez ce repository.
-2. Assurez-vous d'avoir installé les bibliothèques requises : `pip install pandas numpy matplotlib`
-3. Exécutez le script : `python prediction_risk.py`
+## 🎯 Objectif du projet
+Ce projet d'analyse exploratoire de données (EDA) s'inscrit dans le cadre de mes travaux en Data Science et Credit Scoring. L'objectif est d'étudier l'évolution macro-prudentielle des risques du secteur bancaire français à partir des séries temporelles de la Banque de France (Webstat). Cette approche macro-économique sert de contexte et de variable explicative pour enrichir de futurs modèles de prédiction de défaut de paiement.
 
 ---
-*Projet réalisé par Philippe HUYNH — Étudiant en M2 Data Science @ Paris-Saclay*
+
+## 🛠️ Outils et langages informatiques
+* **Python :** Manipulation et nettoyage des données (`Pandas`, `NumPy`), datavisualisation (`Matplotlib`).
+* **Business Intelligence :** `Power BI` et `Power Query` pour la modélisation et la conception de tableaux de bord interactifs.
+* **Environnement :** Jupyter Notebook, Git / GitHub.
+
+---
+
+## 📊 Méthodologie utilisée
+1. **Data Engineering & Nettoyage :** Chargement d'un fichier CSV brut issu de l'Open Data institutionnel (séparateur `;`, gestion de l'encodage `utf-8-sig` pour neutraliser le BOM).
+2. **Traitement temporel :** Conversion stricte de la colonne `time_period_start` au format datetime et typage numérique de la métrique `obs_value`.
+3. **Agrégation (Data Wrangling) :** Regroupement des données par période et calcul de la moyenne (`groupby().mean()`) pour transformer un volume de près de 3 000 lignes hétérogènes en un indicateur macro-économique global et lisible couvrant la période 2006-2024.
+4. **Restitution :** Génération d'une courbe d'évolution sous Python et création d'un rapport interactif sous Power BI.
+
+---
+
+## 🚀 Comment lancer le script
+1. Clonez ce repository sur votre machine.
+2. Assurez-vous d'avoir installé les bibliothèques nécessaires en exécutant la commande suivante dans votre terminal :
+   ```bash
+   pip install pandas numpy matplotlib
+3. Placez le fichier source donnees_banque_france.csv dans le même dossier que le code du projet.
+4.Ouvrez Jupyter Notebook, chargez le script d'analyse et exécutez les cellules une par une pour relancer le pipeline de nettoyage complet.
+5.Visualisez le résultat généré et récupérez l'image de la courbe sauvegardée automatiquement dans le répertoire.
+
+💡 À quelle question est-ce que cela répond ?
+Pourquoi combiner des données macro-économiques avec du Credit Scoring ?
+Réponse : Le comportement de remboursement d'un emprunteur ne dépend pas uniquement de son profil individuel (micro), mais aussi du climat économique global (macro). Injecter cet indicateur dans un modèle de Machine Learning permet d'ajuster le niveau de risque en période de crise et d'éviter le vieillissement des prédictions (concept drift).
+
+Comment avez-vous surmonté la complexité du fichier brut de la Banque de France ?
+Réponse : Par la mise en place d'un pipeline rigoureux sous Pandas : gestion des spécificités d'encodage, suppression des lignes corrompues, conversion de types et agrégation par moyenne pour lisser la tendance générale du marché sans complexité algorithmique superflue.
+
+Quel est l'apport de la partie Power BI ?
+Réponse : Elle démontre une double compétence en combinant le code scientifique (Python) et la restitution orientée Business Intelligence, indispensable pour communiquer efficacement les résultats chiffrés aux équipes métiers.
