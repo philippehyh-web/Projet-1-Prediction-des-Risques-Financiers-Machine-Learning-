@@ -30,11 +30,15 @@ Ce projet d'analyse exploratoire de données (EDA) s'inscrit dans le cadre de me
 5. Visualisez le résultat généré et récupérez l'image de la courbe sauvegardée automatiquement dans le répertoire.
 
 💡 À quelle question est-ce que cela répond ?
+
 Pourquoi combiner des données macro-économiques avec du Credit Scoring ?
-Réponse : Le comportement de remboursement d'un emprunteur ne dépend pas uniquement de son profil individuel (micro), mais aussi du climat économique global (macro). Injecter cet indicateur dans un modèle de Machine Learning permet d'ajuster le niveau de risque en période de crise et d'éviter le vieillissement des prédictions (concept drift).
+
+Le comportement de remboursement d'un emprunteur ne dépend pas uniquement de son profil individuel (micro), mais aussi du climat économique global (macro). Injecter cet indicateur dans un modèle de Machine Learning permet d'ajuster le niveau de risque en période de crise et d'éviter le vieillissement des prédictions (concept drift).
 
 Comment avez-vous surmonté la complexité du fichier brut de la Banque de France ?
-Réponse : Par la mise en place d'un pipeline rigoureux sous Pandas : gestion des spécificités d'encodage, suppression des lignes corrompues, conversion de types et agrégation par moyenne pour lisser la tendance générale du marché sans complexité algorithmique superflue.
+
+Par la mise en place d'un pipeline rigoureux sous Pandas : gestion des spécificités d'encodage, suppression des lignes corrompues, conversion de types et agrégation par moyenne pour lisser la tendance générale du marché sans complexité algorithmique superflue.
 
 Quel est l'apport de la partie Power BI ?
-Réponse : Elle démontre une double compétence en combinant le code scientifique (Python) et la restitution orientée Business Intelligence, indispensable pour communiquer efficacement les résultats chiffrés aux équipes métiers.
+
+Elle démontre une double compétence en combinant le code scientifique (Python) et la restitution orientée Business Intelligence, indispensable pour communiquer efficacement les résultats chiffrés aux équipes métiers.
