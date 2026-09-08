@@ -26,8 +26,8 @@ Ce projet d'analyse exploratoire de données (EDA) s'inscrit dans le cadre de me
    ```bash
    pip install pandas numpy matplotlib
 3. Placez le fichier source donnees_banque_france.csv dans le même dossier que le code du projet.
-4.Ouvrez Jupyter Notebook, chargez le script d'analyse et exécutez les cellules une par une pour relancer le pipeline de nettoyage complet.
-5.Visualisez le résultat généré et récupérez l'image de la courbe sauvegardée automatiquement dans le répertoire.
+4. Ouvrez Jupyter Notebook, chargez le script d'analyse et exécutez les cellules une par une pour relancer le pipeline de nettoyage complet.
+5. Visualisez le résultat généré et récupérez l'image de la courbe sauvegardée automatiquement dans le répertoire.
 
 💡 À quelle question est-ce que cela répond ?
 Pourquoi combiner des données macro-économiques avec du Credit Scoring ?
