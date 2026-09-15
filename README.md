@@ -42,3 +42,8 @@ Par la mise en place d'un pipeline rigoureux sous Pandas : gestion des spécific
 Quel est l'apport de la partie Power BI ?
 
 Elle démontre une double compétence en combinant le code scientifique (Python) et la restitution orientée Business Intelligence, indispensable pour communiquer efficacement les résultats chiffrés aux équipes métiers.
+
+aperçu tableau PowerBI :
+
+<img width="3600" height="1800" alt="evolution_risque" src="https://github.com/user-attachments/assets/cc7e4c89-e915-4213-a37b-3a0c52fd2580" />
+
